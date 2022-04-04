@@ -1,6 +1,10 @@
+import { useRef, useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import SliderSection from "../components/SliderSection/SliderSection";
-import { useRef, useEffect, useState } from "react";
+import HowItWorks from "../components/HowItWorks/HowItWorks";
+import About from "../components/About/About";
+import JoinUs from "../components/JoinUs/JoinUs";
+import Footer from "../components/Footer/Footer";
 
 function LandingPage() {
 
@@ -10,7 +14,6 @@ function LandingPage() {
 
 	useEffect(() => {
 		if (navbarRef.current) {
-			// console.log(navbarRef.current.clientHeight);
 			setNavbarHeight(navbarRef.current.clientHeight);
 		}
 	}, [navbarRef]);
@@ -19,6 +22,10 @@ function LandingPage() {
 		<>
 			<Navbar ref={navbarRef} />
 			<SliderSection navbarHeight={navbarHeight} />
+			<HowItWorks />
+			<About />
+			<JoinUs />
+			<Footer />
 		</>
 	);
 }

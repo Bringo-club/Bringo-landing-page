@@ -1,0 +1,27 @@
+
+.stepContainer {
+	align-items: center;
+	padding-bottom: 130px;
+}
+
+.step {
+	h3 {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 43px;
+	}
+	h5 {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 43px;
+	}
+	h3,
+	h5 {
+		margin-bottom: 32px;
+	}
+	p {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+	}
+}

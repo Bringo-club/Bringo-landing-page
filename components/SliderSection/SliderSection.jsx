@@ -31,7 +31,6 @@ function SliderSection(props) {
 					<SwiperSlide className={`${styles["carousel-three"]}`}></SwiperSlide>
 					<SwiperSlide className={`${styles["carousel-four"]}`}></SwiperSlide>
 					
-
 					<div className={`${styles.overlay}`}>
 						<div className="container">
 							<div className={` ${styles.sliderHeader}`}>
