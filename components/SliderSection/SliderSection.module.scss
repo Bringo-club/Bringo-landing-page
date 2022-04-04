@@ -1,25 +1,77 @@
 
-.carousel-one {
-	background-image: url('/imgs/activities/run.svg');
+// .sliderHeaderContainer {
+// 	position: absolute;
+// }
+
+.overlay {
+	// background-color: yellow;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// opacity: 0.5;
+}
+
+.sliderHeader {
+	// position: absolute;
+	// top: 30%;
+	// right: 0%;
+	// background-color: red;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	h1 {
+		font-weight: 700 !important;
+		font-size: 60px;
+		line-height: 72px;
+		padding-top: 62px;
+	}
+	p,
+	h1 {
+		max-width: 613px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 32px;
+		line-height: 38px;
+		// margin-top: 32px;
+	}
+}
+
+.btnContainer {
+	width: 613px;
+}
+
+.carousel-one,
+.carousel-two,
+.carousel-three,
+.carousel-four {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
+}
+
+.carousel-one {
+	background-image: url('/imgs/activities/run.svg');
 }
 .carousel-two {
 	background-image: url('/imgs/activities/paint.svg');
-	height: 100%;
-	background-size: cover;
-	background-position: center;
 }
 .carousel-three {
 	background-image: url('/imgs/activities/chess.svg');
-	height: 100%;
-	background-size: cover;
-	background-position: center;
 }
 .carousel-four {
 	background-image: url('/imgs/activities/football.svg');
-	height: 100%;
-	background-size: cover;
-	background-position: center;
+}
+
+.section-animate-typing {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+	p {
+		font-size: 200%;
+	}
 }
