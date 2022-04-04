@@ -30,3 +30,18 @@ a {
 	border: none;
 	color: #FFFCFC;
 }
+
+// .swiper-wrapper {
+// 	height: 80vh !important;
+// }
+
+.swiper-pagination-bullet {
+	width: 18px !important;
+	height: 18px !important;
+	background-color: #C4C4C4 !important;
+	opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+	background: #373737 !important;
+}
