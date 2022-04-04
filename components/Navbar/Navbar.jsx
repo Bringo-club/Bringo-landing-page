@@ -1,21 +1,29 @@
 import Link from 'next/link';
-import BringoLogo from '../../assets/bringo.svg';
+// import BringoLogo from '../../assets/bringo.svg';
 import LeftArrow from '../../assets/leftArrow.svg';
 import styles from "./Navbar.module.scss";
-import { forwardRef } from 'react';
+import Image from 'next/image';
 
-const Navbar = forwardRef((props, ref) => {
+function Navbar() {
 	return (
-		<div className="container" ref={ref}>
+		<div className="container">
 			<div className={`row ${styles.navbar}`}>
-				<a href="/#" className="w-fit-content">
-					<BringoLogo />
+				<a href="/#" className={`w-fit-content ${styles.logo}`}>
+					{/* <BringoLogo className={styles.logo} /> */}
+					<Image
+						src="/imgs/bringo.svg"
+						alt=""
+						width={146}
+						height={56}
+						/>
 				</a>
 				<div className={`w-fit-content ${styles.links}`}>
-					<Link href="/#" className="nav-link">
-						About
+					<Link href="/#">
+						<span className="lg-show">
+							About
+						</span>
 					</Link>
-					<Link href="/#" className="nav-link">
+					<Link href="/#">
 						<button className='main-btn'>
 							Join us <LeftArrow />
 						</button>
@@ -24,6 +32,6 @@ const Navbar = forwardRef((props, ref) => {
 			</div>
 		</div>
 	);
-});
+};
 
 export default Navbar;

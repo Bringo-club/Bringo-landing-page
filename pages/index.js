@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import SliderSection from "../components/SliderSection/SliderSection";
 import HowItWorks from "../components/HowItWorks/HowItWorks";
@@ -8,20 +8,10 @@ import Footer from "../components/Footer/Footer";
 
 function LandingPage() {
 
-	const navbarRef = useRef();
-
-	const [navbarHeight, setNavbarHeight] = useState(0);
-
-	useEffect(() => {
-		if (navbarRef.current) {
-			setNavbarHeight(navbarRef.current.clientHeight);
-		}
-	}, [navbarRef]);
-
 	return (
 		<>
-			<Navbar ref={navbarRef} />
-			<SliderSection navbarHeight={navbarHeight} />
+			<Navbar/>
+			<SliderSection />
 			<HowItWorks />
 			<About />
 			<JoinUs />

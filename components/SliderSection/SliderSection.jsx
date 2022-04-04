@@ -1,6 +1,6 @@
+import styles from './SliderSection.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import styles from './SliderSection.module.scss';
 import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import TypeAnimation from 'react-type-animation';
 import "swiper/css/pagination";
@@ -8,13 +8,14 @@ import LeftArrow from '../../assets/leftArrow.svg';
 
 SwiperCore.use([Autoplay, Pagination]);
 
-function SliderSection(props) {
+function SliderSection() {
 	return (
 		<>
 			
 			<Swiper
 					slidesPerView={1}
-					style={{ height: `800px`}}
+					// style={{ height: `800px`}}
+					// style={{ height: `480px`}}
 					loop={true}
 					// autoplay={{
 					// 	delay: 3000,
@@ -24,6 +25,7 @@ function SliderSection(props) {
 					pagination={{
 						clickable: true,
 					}}
+					className={styles.slider}
 				>
 					<SwiperSlide className={`${styles["carousel-one"]}`}></SwiperSlide>
 					<SwiperSlide className={`${styles["carousel-two"]}`}></SwiperSlide>
@@ -32,11 +34,16 @@ function SliderSection(props) {
 					
 					<div className={`${styles.overlay}`}>
 						<div className="container">
-							<div className={` ${styles.sliderHeader}`}>
-								<h1>We make Meeting new friends easier</h1>
-								<p>Create or Join an event. <br />
+							<div className={`${styles.sliderHeader}`}>
+								<h1>we make meeting new friends easier</h1>
+								
+								<p className="lg-show">Create or Join an event. <br />
 									We Help You Connect, Grow, Have fun and Make Good memories together.
 								</p>
+
+								<p className="sm-show">Create or Join an event. Connect, <br />
+									Learn, Grow, Have fun & make <br /> Good memories together.</p>
+
 								<a href="/#" className={styles.btnContainer}>
 									<button className='main-btn'>
 									Join Bringo <LeftArrow />

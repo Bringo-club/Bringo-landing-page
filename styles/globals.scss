@@ -32,15 +32,33 @@ a {
 	color: #FFFCFC;
 }
 
-// .swiper-wrapper {
-// 	height: 80vh !important;
-// }
+.sm-show {
+	display: none;
+}
 
 .swiper-pagination-bullet {
 	width: 18px !important;
 	height: 18px !important;
 	background-color: #C4C4C4 !important;
 	opacity: 1 !important;
+}
+
+@media (max-width: 1024px) {
+	.main-btn {
+		border-radius: 5px;
+		padding: 6px 12px;
+		font-size: 11px;
+	}
+	.lg-show {
+		display: none;
+	}
+	.sm-show {
+		display: block;
+	}
+	.swiper-pagination-bullet {
+		width: 8px !important;
+		height: 8px !important;
+	}
 }
 
 .swiper-pagination-bullet-active {

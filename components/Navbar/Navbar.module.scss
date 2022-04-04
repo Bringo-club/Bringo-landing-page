@@ -3,6 +3,7 @@
 	justify-content: space-between;
 	padding-top: 32px;
 	padding-bottom: 32px;
+	align-items: center;
 }
 .links {
 	display: flex;
@@ -14,6 +15,26 @@
 		margin-left: 24px;
 		svg {
 			margin-left: 8px;
+		}
+	}
+}
+
+.logo {
+	img {
+		width: 146px;
+		height: 45px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.navbar {
+		margin-top: -0.5rem;
+		padding-bottom: 0px;
+	}
+	.logo {
+		img {
+			width: 92px !important;
+			height: 28px !important;
 		}
 	}
 }
