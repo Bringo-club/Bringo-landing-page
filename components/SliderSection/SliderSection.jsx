@@ -9,17 +9,16 @@ import LeftArrow from '../../assets/leftArrow.svg';
 SwiperCore.use([Autoplay, Pagination]);
 
 function SliderSection(props) {
-	// console.log(props.navbarHeight);
 	return (
 		<>
 			
 			<Swiper
 					slidesPerView={1}
-					style={{ height: `calc(100vh - ${props.navbarHeight}px)`}}
+					style={{ height: `800px`}}
 					loop={true}
-					autoplay={{
-						delay: 3000,
-					}}
+					// autoplay={{
+					// 	delay: 3000,
+					// }}
 					speed={1000}
 					modules={[Pagination]}
 					pagination={{

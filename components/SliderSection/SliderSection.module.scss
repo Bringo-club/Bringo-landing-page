@@ -49,18 +49,21 @@
 .carousel-three,
 .carousel-four {
 	height: 100%;
-	background-size: cover;
-	background-position: center;
+	// background-size: cover;
+	// background-position: center;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 100%;
 }
 
 .carousel-one {
-	background-image: url('/imgs/activities/run.svg');
+	background-image: url('/imgs/activities/chess.svg');
 }
 .carousel-two {
-	background-image: url('/imgs/activities/paint.svg');
+	background-image: url('/imgs/activities/run.svg');
 }
 .carousel-three {
-	background-image: url('/imgs/activities/chess.svg');
+	background-image: url('/imgs/activities/paint.svg');
 }
 .carousel-four {
 	background-image: url('/imgs/activities/football.svg');
