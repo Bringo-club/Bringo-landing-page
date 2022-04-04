@@ -1,0 +1,19 @@
+
+.navbar {
+	justify-content: space-between;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.links {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	button {
+		margin-left: 24px;
+		svg {
+			margin-left: 8px;
+		}
+	}
+}

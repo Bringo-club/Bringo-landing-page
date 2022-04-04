@@ -1,55 +1,28 @@
+import Link from 'next/link';
 import BringoLogo from '../../assets/bringo.svg';
-import ToogleMenu from '../../assets/ToogleMenu.svg';
+import LeftArrow from '../../assets/leftArrow.svg';
+import styles from "./Navbar.module.scss";
 
 function Navbar() {
 	return (
-		<nav className="navbar navbar-expand-lg bg-white">
-			<div className='container'>
-				<a href="/" className="navbar-brand">
+		<div className="container">
+			<div className={`row ${styles.navbar}`}>
+				<a href="/#" className="w-fit-content">
 					<BringoLogo />
 				</a>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span>
-						<ToogleMenu />
-					</span>
-				</button>
-				<div
-					className="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
-					<ul className="navbar-nav ml-auto text-center">
-						<li className="nav-item px-1 py-1">
-							<a
-								className="nav-link home-about-link"
-								href="#how-it-works"
-							>
-								Home
-							</a>
-						</li>
-						<li className="nav-item ml-lg-5 px-1 py-1">
-							<a className="nav-link home-about-link" href="#about">
-								About
-							</a>
-						</li>
-						<li className="nav-item sing-in ml-lg-5 mr-lg-3 px-1 py-1">
-							<a className="nav-link" href="/joinus">
-								Join us
-							</a>
-						</li>
-					</ul>
+				<div className={`w-fit-content ${styles.links}`}>
+					<Link href="/#" className="nav-link">
+						About
+					</Link>
+					<Link href="/#" className="nav-link">
+						<button className='main-btn'>
+							Join us <LeftArrow />
+						</button>
+					</Link>
 				</div>
-
 			</div>
-		</nav>
+		</div>
 	);
-}
+};
 
 export default Navbar;
