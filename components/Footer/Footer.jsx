@@ -14,17 +14,17 @@ function Footer(props) {
 				<path d="M35.3295 45.6287H17.6722C11.9939 45.6287 7.37207 41.0083 7.37207 35.3285V17.6712C7.37207 11.9914 11.9939 7.37109 17.6722 7.37109H35.3295C41.0078 7.37109 45.6296 11.9914 45.6296 17.6712V35.3285C45.6296 41.0083 41.0078 45.6287 35.3295 45.6287ZM17.6722 10.314C13.6154 10.314 10.315 13.6144 10.315 17.6712V35.3285C10.315 39.3853 13.6154 42.6858 17.6722 42.6858H35.3295C39.3863 42.6858 42.6867 39.3853 42.6867 35.3285V17.6712C42.6867 13.6144 39.3863 10.314 35.3295 10.314H17.6722Z" fill="#FFFCFC"/>
 				<defs>
 				<radialGradient id="paint0_radial_156_370" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.7027 53.0383) scale(66.0664)">
-				<stop stop-color="#FFDD55"/>
-				<stop offset="0.328" stop-color="#FF543F"/>
-				<stop offset="0.348" stop-color="#FC5245"/>
-				<stop offset="0.504" stop-color="#E64771"/>
-				<stop offset="0.643" stop-color="#D53E91"/>
-				<stop offset="0.761" stop-color="#CC39A4"/>
-				<stop offset="0.841" stop-color="#C837AB"/>
+				<stop stopColor="#FFDD55"/>
+				<stop offset="0.328" stopColor="#FF543F"/>
+				<stop offset="0.348" stopColor="#FC5245"/>
+				<stop offset="0.504" stopColor="#E64771"/>
+				<stop offset="0.643" stopColor="#D53E91"/>
+				<stop offset="0.761" stopColor="#CC39A4"/>
+				<stop offset="0.841" stopColor="#C837AB"/>
 				</radialGradient>
 				<radialGradient id="paint1_radial_156_370" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.5285 -0.661701) scale(43.8682 29.2294)">
-				<stop stop-color="#4168C9"/>
-				<stop offset="0.999" stop-color="#4168C9" stop-opacity="0"/>
+				<stop stopColor="#4168C9"/>
+				<stop offset="0.999" stopColor="#4168C9" stopOpacity="0"/>
 				</radialGradient>
 				</defs>
 				</svg>
