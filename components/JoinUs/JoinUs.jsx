@@ -1,6 +1,5 @@
 import styles from './JoinUs.module.scss';
 import { useState, useRef } from 'react';
-import { useRouter } from 'next/router'
 
 const options = [
 	'um6p benguerir'
@@ -8,14 +7,12 @@ const options = [
 
 function JoinUs() {
 
-	const router = useRouter()
-
 	const [location, setLocation] = useState("");
 	const [matchedLocation, setMatchedLocation] = useState(options);
 	const [showSuggestion, setShowSuggestion] = useState(false);
-	const fullnameRef = useRef(null);
-	const emailRef = useRef(null);
-	const feedbackRef = useRef(null);
+	const [fullname, setFullname] = useState("");
+	const [email, setEmail] = useState("");
+	const [feedback, setFeedback] = useState("");
 
 	const changeLocationHandler = (event) => {
 		setLocation(event.target.value);
@@ -34,29 +31,6 @@ function JoinUs() {
 		setShowSuggestion(false);
 	}
 
-	const onSubmitHandler = (e) => {
-		e.preventDefault();
-		fetch("https://form.taxi/s/fcbcrpxq", {
-			method: "POST",
-			headers: {
-				"Accept": "application/json",
-			},
-			body: JSON.stringify({
-				"form-name": "join-us",
-				"fullname": fullnameRef.current.value,
-				"email": emailRef.current.value,
-				"location": location,
-				"feedback": feedbackRef.current.value
-
-		})
-	}).then(response => {
-		console.log(response);
-		if (response.status === 200) {
-			router.push("/thankyou");
-		}
-	});
-	};
-
 	const showSuggestionHandler = (event) => {
 		event.stopPropagation();
 		setShowSuggestion(true);
@@ -70,18 +44,29 @@ function JoinUs() {
 		<div className={styles.joinContainer} onClick={hideSuggestionHandler} id="join-us">
 			<div className="container">
 				<h4 className="header">Join Bringo</h4>
-				<form onSubmit={onSubmitHandler}>
+				{/* <form onSubmit={onSubmitHandler}> */}
+				<form action="https://form.taxi/s/fcbcrpxq" method="POST">
 					<div className="row">
 						<div className='col-md-6'>
 							<div className={styles["input-group"]}>
 								<label htmlFor="fullname">Full name <span>*</span></label>
-								<input ref={fullnameRef} required type="text" name='fullname' />
+								<input
+									value={fullname}
+									onChange={(event) => setFullname(event.target.value)}
+									required
+									type="text"
+									name='fullname' />
 							</div>
 						</div>
 						<div className='col-md-6'>
 							<div className={styles["input-group"]}>
 								<label htmlFor="email">Email <span>*</span></label>
-								<input ref={emailRef} required type="email" name='email' />
+								<input
+									value={email}
+									onChange={(event) => setEmail(event.target.value)}
+									required
+									type="email"
+									name='email' />
 								<span>Ideally school email</span>
 							</div>
 						</div>
@@ -105,7 +90,11 @@ function JoinUs() {
 						<div className='col-12'>
 							<div className={`${styles["input-group"]} ${styles["textarea"]}`}>
 								<label htmlFor="email">Feedback <span className={styles.greyText}>(optional)</span></label>
-								<textarea ref={feedbackRef} rows={6} />
+								<textarea
+									name='feedback'
+									value={feedback}
+									onChange={(event) => setFeedback(event.target.value)}
+									rows={6} />
 								<span>We&apos;d like to know what you think</span>
 							</div>
 						</div>
