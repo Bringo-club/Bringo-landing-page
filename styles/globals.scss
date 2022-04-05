@@ -95,3 +95,16 @@ a {
 		box-shadow: none !important;
 	}
 }
+
+.error-border {
+	& > div {
+		border: 1px solid #dc3545;
+	}
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	
+}

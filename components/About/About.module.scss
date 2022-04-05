@@ -2,24 +2,14 @@
 
 .aboutContainer {
 	margin-bottom: 60px;
-	// h4 {
-	// 	padding-top: 60px;
-	// 	text-transform: uppercase;
-	// 	text-align: center;
-	// 	font-weight: 700;
-	// 	font-size: 24px;
-	// 	line-height: 29px;
-	// 	color: $mainColor;
-	// 	margin-bottom: 56px;
-	// }
 }
 
 .values,
 .story {
 	h5 {
 		font-weight: 500;
-		font-size: 36px;
-		line-height: 43px;
+		font-size: $lgTextSize;
+		line-height: $lgLineHeight;
 		text-transform: capitalize;
 		margin-bottom: 34px;
 	}
@@ -32,4 +22,19 @@
 
 .values {
 	margin-top: 42px;
+}
+
+@media (max-width: 1024px) {
+	.values,
+	.story {
+		h5 {
+			font-size: $smTextSize;
+			line-height: $smLineHeight;
+			margin-bottom: 16px;
+		}
+		p {
+			font-size: $smParagraphSize;
+			line-height: $smParagraphLineHeight;
+		}
+	}
 }

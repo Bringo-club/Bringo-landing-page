@@ -5,6 +5,7 @@ import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import TypeAnimation from 'react-type-animation';
 import "swiper/css/pagination";
 import LeftArrow from '../../assets/leftArrow.svg';
+import Link from 'next/link';
 
 SwiperCore.use([Autoplay, Pagination]);
 
@@ -14,12 +15,10 @@ function SliderSection() {
 			
 			<Swiper
 					slidesPerView={1}
-					// style={{ height: `800px`}}
-					// style={{ height: `480px`}}
 					loop={true}
-					// autoplay={{
-					// 	delay: 3000,
-					// }}
+					autoplay={{
+						delay: 3000,
+					}}
 					speed={1000}
 					modules={[Pagination]}
 					pagination={{
@@ -44,11 +43,13 @@ function SliderSection() {
 								<p className="sm-show">Create or Join an event. Connect, <br />
 									Learn, Grow, Have fun & make <br /> Good memories together.</p>
 
-								<a href="/#" className={styles.btnContainer}>
-									<button className='main-btn'>
-									Join Bringo <LeftArrow />
-									</button>
-								</a>
+								<Link href="#join-us">
+									<div className={styles.btnContainer}>
+										<button className='main-btn'>
+										Join Bringo <LeftArrow />
+										</button>
+									</div>
+								</Link>
 							</div>
 						</div>
 					</div>

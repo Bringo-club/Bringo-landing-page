@@ -2,7 +2,7 @@ import styles from './About.module.scss';
 
 function About() {
 	return (
-		<div className={`container ${styles.aboutContainer}`}>
+		<div className={`container ${styles.aboutContainer}`} id="about">
 			<h4 className='header'>about</h4>
 			<div className={styles.story}>
 				<h5>story</h5>

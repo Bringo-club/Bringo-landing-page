@@ -1,3 +1,4 @@
+@import "../../imports/colors";
 
 .stepContainer {
 	align-items: center;
@@ -7,16 +8,14 @@
 .step {
 	h3 {
 		font-weight: 600;
-		font-size: 36px;
-		line-height: 43px;
 	}
 	h5 {
 		font-weight: 500;
-		font-size: 36px;
-		line-height: 43px;
 	}
 	h3,
 	h5 {
+		font-size: $lgTextSize;
+		line-height: $lgLineHeight;
 		margin-bottom: 32px;
 	}
 	p {
@@ -29,4 +28,30 @@
 .stepImg {
 	display: flex;
 	justify-content: center;
+}
+
+@media (max-width: 1024px) {
+	.stepContainer {
+		align-items: center;
+		padding-bottom: 60px;
+	}
+	
+	.step {
+		h3,
+		h5 {
+			font-size: $smTextSize;
+			line-height: $smLineHeight;
+			margin-bottom: 16px;
+		}
+		p {
+			font-size: $smParagraphSize;
+			line-height: $smParagraphLineHeight;
+		}
+	}
+	.stepImg {
+		img {
+			width: 245.15px !important;
+
+		}
+	}
 }
