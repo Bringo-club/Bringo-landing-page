@@ -3,11 +3,7 @@ import { useState, useRef } from 'react';
 import { useRouter } from 'next/router'
 
 const options = [
-	'um6p benguerir',
-	'um6p rabat',
-	'um6p bg',
-	"1337 bg",
-	"1337 kh",
+	'um6p benguerir'
 ];
 
 function JoinUs() {
@@ -110,7 +106,7 @@ function JoinUs() {
 							<div className={`${styles["input-group"]} ${styles["textarea"]}`}>
 								<label htmlFor="email">Feedback <span className={styles.greyText}>(optional)</span></label>
 								<textarea ref={feedbackRef} rows={6} />
-								<span>We'd like to know what you think</span>
+								<span>We&apos;d like to know what you think</span>
 							</div>
 						</div>
 						<div className={`col-12 ${styles.btnContainer}`}>

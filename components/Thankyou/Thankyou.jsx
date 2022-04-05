@@ -19,7 +19,7 @@ function Thankyou() {
 			</div>
 			<h3 className={styles.header}>thank you for being awesome!</h3>
 			{/* <div> */}
-				<Link href="/">
+				<Link href="/" passHref>
 					<button className={`main-btn ${styles.btn}`}>
 						<RightArrow />
 						Go Back Home

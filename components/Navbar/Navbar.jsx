@@ -7,7 +7,7 @@ function Navbar() {
 	return (
 		<div className="container">
 			<div className={`row ${styles.navbar}`}>
-				<Link href="/" className={`w-fit-content ${styles.logo}`}>
+				<Link href="/" className={`w-fit-content ${styles.logo}`} passHref>
 					<Image
 						src="/imgs/bringo.svg"
 						alt=""
@@ -16,12 +16,12 @@ function Navbar() {
 						/>
 				</Link>
 				<div className={`w-fit-content ${styles.links}`}>
-					<Link href="#about">
+					<Link href="#about" passHref>
 						<span className="lg-show">
 							About
 						</span>
 					</Link>
-					<Link href="#join-us">
+					<Link href="#join-us" passHref>
 						<button className='main-btn'>
 							Join us <LeftArrow />
 						</button>
