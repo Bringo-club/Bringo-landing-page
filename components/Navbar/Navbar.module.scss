@@ -31,7 +31,8 @@
 
 @media (max-width: 1024px) {
 	.navbar {
-		margin-top: -0.5rem;
+		// margin-top: -1rem;
+		padding: 16px 16px;
 		padding-bottom: 0px;
 	}
 	.logo {
@@ -39,5 +40,8 @@
 			width: 92px !important;
 			height: 28px !important;
 		}
+	}
+	.links {
+		padding-right: 0;
 	}
 }

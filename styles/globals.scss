@@ -70,14 +70,23 @@ a {
 }
 
 .header {
-	padding-top: 60px;
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 29px;
 	color: $mainColor;
+	padding-top: 60px;
 	margin-bottom: 56px;
+}
+
+@media (max-width: 1024px) {
+	.header {
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 30px;
+		margin-bottom: 28px;
+	}
 }
 
 .select {

@@ -1,5 +1,5 @@
 import styles from './JoinUs.module.scss';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 const options = [
 	'um6p benguerir'
@@ -26,7 +26,8 @@ function JoinUs() {
 		setMatchedLocation(matchedLocation);
 	};
 
-	const selectLocationHandler = (place) => {
+	const selectLocationHandler = (event, place) => {
+		event.stopPropagation();
 		setLocation(place);
 		setShowSuggestion(false);
 	}
@@ -78,7 +79,7 @@ function JoinUs() {
 									showSuggestion && <ul className={styles.suggestList}>
 										{matchedLocation.map((option, index) => {
 											return (
-												<li key={index} onClick={selectLocationHandler.bind(null, option)}>{option}</li>
+												<li key={index} onClick={event => selectLocationHandler(event, option)}>{option}</li>
 											)
 										})}
 									</ul>

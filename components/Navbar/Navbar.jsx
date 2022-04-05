@@ -6,8 +6,8 @@ import Image from 'next/image';
 function Navbar() {
 	return (
 		<div className="container">
-			<div className={`row ${styles.navbar}`}>
-				<Link href="/" className={`w-fit-content ${styles.logo}`} passHref>
+			<div className={`row ${styles.navbar} ${styles.logo}`}>
+				<Link href="/" className={`w-fit-content`} passHref>
 					<Image
 						src="/imgs/bringo.svg"
 						alt=""

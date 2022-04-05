@@ -3,11 +3,14 @@ import RightArrow from "../../assets/rightArrow.svg";
 import Link from 'next/link'
 
 function Thankyou() {
+	if (typeof window !== 'undefined') {
+		// detect window screen width function
+	}
 	return (
 		<div className={`container ${styles.thankyouContainer}`}>
 			<div className={styles.yas5}>
 				<div className={styles.All}>
-					<svg className={styles.svgWrapper}>
+					<svg className={styles.svgWrapper}  viewBox="0 0 305 277">
 						<path d="M196.6,27.6C179.1,18.3,159.2,13,138,13C69,13,13,69,13,138s56,125,125,125s125-56,125-125 c0-8.5-0.9-16.8-2.5-24.9" className={styles.circleGray}></path>
 						<path d="M196.6,27.6C179.1,18.3,159.2,13,138,13C69,13,13,69,13,138s56,125,125,125s125-56,125-125 c0-8.5-0.9-16.8-2.5-24.9" className={styles.circleLightBlue}></path>
 						<path d="M196.6,27.6C179.1,18.3,159.2,13,138,13C69,13,13,69,13,138s56,125,125,125s125-56,125-125 c0-8.5-0.9-16.8-2.5-24.9" className={styles.circleDarkBlue}></path>
