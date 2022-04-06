@@ -4,17 +4,17 @@ function About() {
 	return (
 		<div className={`container ${styles.aboutContainer}`} id="about">
 			<h4 className="header">about</h4>
-			<div className={styles.story}>
-				<h5>story</h5>
-				<p>Surprisingly we&apos;ve got this idea during a hackathon in 2021, we were trying to make meeting new friends a smooth thing. we lost the hackathon and throw that idea into the closest trash bin ( as 99.92 of hackathons ideas )</p>
-				<p>After that a lot of people were asking us about it, eventually, they convinced us to build it.</p>
-				<p>and that&apos;s how Bringo was started.</p>
-			</div>
 			<div className={styles.values}>
-				<h5>values</h5>
-				<p>Surprisingly we&apos;ve got this idea during a hackathon in 2021, we were trying to make meeting new friends a smooth thing. we lost the hackathon and throw that idea into the closest trash bin ( as 99.92 of hackathons ideas )</p>
-				<p>After that a lot of people were asking us about it, eventually, they convinced us to build it.</p>
-				<p>and that&apos;s how Bringo was started.</p>
+				<h5>Values</h5>
+				<p>We believe that a life filled with real life experiences with friends and other people is a rich life.</p>
+				<p>We believe that having a healthy support system around us is an infinitely valuable thing, having people who can help us celebrate our victories and learn from our loses.</p>
+				<p>We believe that when people gather, they make great stuff happen, whether creating a business, a charity or just helping each other grow.</p>
+				<p>So our mission is to help you meet awsome people and expand your social circle.</p>
+			</div>
+			<div className={styles.story}>
+				<h5>Vision</h5>
+				<p>Our goals is to make it easy to for individuals to form meaningful connections in real life.</p>
+				<p>We want to be able to use technology to enhance our social life instead of destroying it.</p>
 			</div>
 		</div>
 	);
