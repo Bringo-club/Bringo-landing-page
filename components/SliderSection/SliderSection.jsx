@@ -16,9 +16,9 @@ function SliderSection() {
 			<Swiper
 					slidesPerView={1}
 					loop={true}
-					// autoplay={{
-					// 	delay: 3000,
-					// }}
+					autoplay={{
+						delay: 3000,
+					}}
 					speed={1000}
 					modules={[Pagination]}
 					pagination={{
@@ -45,7 +45,7 @@ function SliderSection() {
 
 								<Link href="#join-us" passHref>
 									<div className={styles.btnContainer}>
-										<button className='main-btn'>
+										<button className='main-btn bringo-btn'>
 										Join Bringo <LeftArrow />
 										</button>
 									</div>

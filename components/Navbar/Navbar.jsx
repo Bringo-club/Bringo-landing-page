@@ -11,8 +11,8 @@ function Navbar() {
 					<Image
 						src="/imgs/bringo.svg"
 						alt=""
-						width={146}
-						height={56}
+						width={116}
+						height={35}
 						/>
 				</Link>
 				<div className={`w-fit-content ${styles.links}`}>

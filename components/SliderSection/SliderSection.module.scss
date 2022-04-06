@@ -1,6 +1,6 @@
 
 .slider {
-	height: 800px;
+	height: 643px;
 }
 
 @media (max-width: 1024px) {
@@ -23,9 +23,9 @@
 	align-items: flex-end;
 	flex-direction: column;
 	h1 {
-		font-weight: 700 !important;
-		font-size: 50px;
-		// line-height: 72px;
+		font-weight: 600 !important;
+		font-size: 45px;
+		line-height: 60px;
 		padding-top: 62px;
 		text-transform: capitalize;
 	}
@@ -33,11 +33,12 @@
 	h1 {
 		// max-width: 613px;
 		// max-width: 533px;
-		font-weight: 400;
+		// font-weight: 400;
 	}
 	p {
-		font-size: 24px;
-		line-height: 38px;
+		font-size: 22px;
+		line-height: 28px;
+		font-weight: 300;
 		// margin-top: 32px;
 	}
 }
@@ -45,7 +46,7 @@
 .sliderHeader p,
 .sliderHeader h1,
 .btnContainer {
-	width: 533px;
+	width: 450px;
 }
 
 
@@ -69,7 +70,7 @@
 	transform: translateX(-50%);
 	z-index: 3;
 	p {
-		font-size: 200%;
+		font-size: 150%;
 	}
 }
 

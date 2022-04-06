@@ -27,9 +27,18 @@ a {
 .main-btn {
 	background: $mainColor;
 	border-radius: 10px;
-	padding: 12px 28px;
+	padding: 8px 28px;
 	border: none;
 	color: #FFFCFC;
+	display: flex;
+	align-items: center;
+	svg {
+		margin-left: 8px;
+	}
+}
+
+.bringo-btn {
+	padding: 12px 28px;
 }
 
 .sm-show {
@@ -37,8 +46,10 @@ a {
 }
 
 .swiper-pagination-bullet {
-	width: 18px !important;
-	height: 18px !important;
+	width: 13px !important;
+	height: 13px !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
 	background-color: #C4C4C4 !important;
 	opacity: 1 !important;
 }
@@ -72,7 +83,7 @@ a {
 .header {
 	text-transform: uppercase;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 24px;
 	line-height: 29px;
 	color: $mainColor;
