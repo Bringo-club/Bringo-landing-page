@@ -13,7 +13,7 @@ function HowItWorks() {
 					img="/imgs/steps/step1.svg"
 					number="Step 1:"
 					title="Discover what's going on around you"
-					desc="Missing on events and activities around you wouldn't be a problem anymore, on bringo you can find what people around you are up to. It's also a chance to discover new interests and hobbies."
+					desc="Missing on events and activities around you wouldn't be a problem anymore, on bringo you can find what people around you are up to."
 					/>
 				<StepCard
 					reverse
