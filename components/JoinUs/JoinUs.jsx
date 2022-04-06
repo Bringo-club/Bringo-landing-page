@@ -43,68 +43,69 @@ function JoinUs() {
 
 	return (
 		<div className={styles.joinContainer} onClick={hideSuggestionHandler} id="join-us">
-			<div className="container">
+			<div className={`container`}>
 				<h4 className="header">Join Bringo</h4>
-				{/* <form onSubmit={onSubmitHandler}> */}
-				<form action="https://form.taxi/s/fcbcrpxq" method="POST">
-					<div className="row">
-						<div className='col-md-6'>
-							<div className={styles["input-group"]}>
-								<label htmlFor="fullname">Full name <span>*</span></label>
-								<input
-									value={fullname}
-									onChange={(event) => setFullname(event.target.value)}
-									required
-									type="text"
-									name='fullname' />
+				<div className="row">
+					<form className='col-lg-6 offset-lg-3' action="https://form.taxi/s/fcbcrpxq" method="POST">
+						<div className="row">
+							<div className='col-md-6'>
+								<div className={styles["input-group"]}>
+									<label htmlFor="fullname">Full name <span>*</span></label>
+									<input
+										value={fullname}
+										onChange={(event) => setFullname(event.target.value)}
+										required
+										type="text"
+										name='fullname' />
+								</div>
 							</div>
-						</div>
-						<div className='col-md-6'>
-							<div className={styles["input-group"]}>
-								<label htmlFor="email">Email <span>*</span></label>
-								<input
-									value={email}
-									onChange={(event) => setEmail(event.target.value)}
-									required
-									type="email"
-									name='email' />
-								<span>Ideally school email</span>
+							<div className='col-md-6'>
+								<div className={styles["input-group"]}>
+									<label htmlFor="email">Email <span>*</span></label>
+									<input
+										value={email}
+										onChange={(event) => setEmail(event.target.value)}
+										required
+										type="email"
+										name='email' />
+									<span>Ideally school email</span>
+								</div>
 							</div>
-						</div>
-						<div className='col-12'>
-							<div className={`${styles["input-group"]} ${styles.locationGroup}`} onClick={showSuggestionHandler}>
-								<label htmlFor="location">location <span className={styles.greyText}>(your university or city)</span> <span>*</span></label>
-								<input value={location} onChange={changeLocationHandler} required type="text" name='location' />
-								{
-									showSuggestion && <ul className={styles.suggestList}>
-										{matchedLocation.map((option, index) => {
-											return (
-												<li key={index} onClick={event => selectLocationHandler(event, option)}>{option}</li>
-											)
-										})}
-									</ul>
-								}
-								<span>Bringo will lunch at um6p bg first, if you want it in your local university/community let us know.</span>
+							<div className='col-12'>
+								<div className={`${styles["input-group"]} ${styles.locationGroup}`} onClick={showSuggestionHandler}>
+									<label htmlFor="location">location <span className={styles.greyText}>(your university or city)</span> <span>*</span></label>
+									<input value={location} onChange={changeLocationHandler} required type="text" name='location' />
+									{
+										showSuggestion && <ul className={styles.suggestList}>
+											{matchedLocation.map((option, index) => {
+												return (
+													<li key={index} onClick={event => selectLocationHandler(event, option)}>{option}</li>
+												)
+											})}
+										</ul>
+									}
+									<span>Bringo will lunch at um6p bg first, if you want it in your local university/community let us know.</span>
+								</div>
 							</div>
-						</div>
 
-						<div className='col-12'>
-							<div className={`${styles["input-group"]} ${styles["textarea"]}`}>
-								<label htmlFor="email">Feedback <span className={styles.greyText}>(optional)</span></label>
-								<textarea
-									name='feedback'
-									value={feedback}
-									onChange={(event) => setFeedback(event.target.value)}
-									rows={6} />
-								<span>We&apos;d like to know what you think</span>
+							<div className='col-12'>
+								<div className={`${styles["input-group"]} ${styles["textarea"]}`}>
+									<label htmlFor="email">Feedback <span className={styles.greyText}>(optional)</span></label>
+									<textarea
+										name='feedback'
+										value={feedback}
+										onChange={(event) => setFeedback(event.target.value)}
+										rows={4} />
+									<span>We&apos;d like to know what you think</span>
+								</div>
+							</div>
+							<div className={`col-12 ${styles.btnContainer}`}>
+								<button className='main-btn'>Submit</button>
+								<span>We are still building Bringo at the moment, your email will only be used to contact you once we launch</span>
 							</div>
 						</div>
-						<div className={`col-12 ${styles.btnContainer}`}>
-							<button className='main-btn'>Submit</button>
-							<span>We are still building Bringo at the moment, your email will only be used to contact you once we launch</span>
-						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
 	);

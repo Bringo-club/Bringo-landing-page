@@ -24,25 +24,28 @@
 	flex-direction: column;
 	h1 {
 		font-weight: 700 !important;
-		font-size: 60px;
-		line-height: 72px;
+		font-size: 50px;
+		// line-height: 72px;
 		padding-top: 62px;
 		text-transform: capitalize;
 	}
 	p,
 	h1 {
-		max-width: 613px;
+		// max-width: 613px;
+		// max-width: 533px;
 		font-weight: 400;
 	}
 	p {
-		font-size: 32px;
+		font-size: 24px;
 		line-height: 38px;
 		// margin-top: 32px;
 	}
 }
 
+.sliderHeader p,
+.sliderHeader h1,
 .btnContainer {
-	width: 613px;
+	width: 533px;
 }
 
 
@@ -75,11 +78,9 @@
 .carousel-three,
 .carousel-four {
 	height: 100%;
-	// background-size: cover;
-	// background-position: center;
 	background-repeat: no-repeat;
 	background-position-y: 50%;
-	background-position-x: 100%;
+	background-position-x: 520%;
 }
 
 @media (max-width: 2300px) {

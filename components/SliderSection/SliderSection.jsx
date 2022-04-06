@@ -16,9 +16,9 @@ function SliderSection() {
 			<Swiper
 					slidesPerView={1}
 					loop={true}
-					autoplay={{
-						delay: 3000,
-					}}
+					// autoplay={{
+					// 	delay: 3000,
+					// }}
 					speed={1000}
 					modules={[Pagination]}
 					pagination={{

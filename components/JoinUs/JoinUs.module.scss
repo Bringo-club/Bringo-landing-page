@@ -4,6 +4,7 @@
 	background-color: $secondBgColor;
 }
 
+
 .input-group {
 	display: flex;
 	flex-direction: column;
@@ -20,7 +21,7 @@
 		margin-bottom: 8px;
 	}
 	input {
-		height: 61px;
+		height: 40px;
 	}
 
 	span {
@@ -35,7 +36,7 @@
 .input-group input {
 	background: #FFFCFC;
 	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.03);
-	border-radius: 10px;
+	border-radius: 8px;
 	border: none;
 	padding-left: 16px;
 }
