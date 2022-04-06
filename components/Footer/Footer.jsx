@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 function Footer(props) {
 	return (
 		<div className={`${styles.footerContainer} ${props.class && props.class}`}>
-			<h4>Contact us</h4>
+			<h4>Follow us</h4>
 			<a href="https://www.instagram.com/bringo.club/" target="_blank" rel="noreferrer">
 				<svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M30.3466 39.4794L8.69133 39.5C3.92718 39.5043 0.0259899 35.6107 0.0205761 30.8466L3.60972e-06 9.19133C-0.00432744 4.42718 3.88928 0.52599 8.65344 0.520576L30.3087 0.500004C35.0728 0.495673 38.974 4.38928 38.9794 9.15344L39 30.8087C39.0054 35.5739 35.1107 39.4751 30.3466 39.4794Z" fill="url(#paint0_radial_245_932)"/>
