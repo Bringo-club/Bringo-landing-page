@@ -9,6 +9,30 @@ import Link from 'next/link';
 
 SwiperCore.use([Autoplay, Pagination]);
 
+const activities = [
+	"Let's Run",
+	"Let's Play Chess",
+	"Let's Paint",
+	"Let's eat pizza",
+	"Let's lear how to dance",
+	"Let's go for a walk",
+	"Let's go for a hike",
+	"Let's watch a movie",
+	"Let's do yoga",
+	"Let's study math",
+	"Let's watch the sunset",
+	"Let's play tennis"
+]
+
+
+const renderedActivities = [];
+
+for (let i = 0; i < activities.length; i++) {
+	renderedActivities.push(
+		activities[i], 1000);
+}
+
+
 function SliderSection() {
 	return (
 		<>
@@ -58,18 +82,7 @@ function SliderSection() {
 						className={`${styles["section-animate-typing"]}`} >
 						<TypeAnimation
 							cursor={true}
-							sequence={[
-								"Let's go for a walk",
-								1000,
-								"Let's Run",
-								1000,
-								"Let's Play Chess",
-								1000,
-								"Let's Paint",
-								1000,
-								"Let's eat pizza",
-								1000
-								]}
+							sequence={renderedActivities}
 							wrapper="p"
 							repeat={Infinity}
 						/>
