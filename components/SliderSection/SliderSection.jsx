@@ -11,17 +11,24 @@ SwiperCore.use([Autoplay, Pagination]);
 
 const activities = [
 	"Let's Run",
+	"Let's go for a hike",
 	"Let's Play Chess",
 	"Let's Paint",
-	"Let's eat pizza",
-	"Let's lear how to dance",
+	"Let's eat msemen",
+	"Let's learn Spanish",
+	"Let's learn dancing",
 	"Let's go for a walk",
-	"Let's go for a hike",
 	"Let's watch a movie",
 	"Let's do yoga",
 	"Let's study math",
 	"Let's watch the sunset",
-	"Let's play tennis"
+	"Let's play tennis",
+	"Let's Learn JavaScripto",
+	"Let's cook k3ik3at",
+	"Let's discuss NFTs",
+	"Let's build a sand castle",
+	"Let's talk about spaceships",
+	"Let's make a documentary"
 ]
 
 
