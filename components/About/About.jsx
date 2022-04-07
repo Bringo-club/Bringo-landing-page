@@ -9,7 +9,7 @@ function About() {
 					<div className={styles.values}>
 						<h5>Values</h5>
 						<p>We believe that a life filled with real-life experiences with friends and other people is a rich life.</p>
-						<p>We believe that having a healthy support system around us is an infinitely valuable thing, having people who can help us celebrate our victories and learn from our losses.</p>
+						{/* <p>We believe that having a healthy support system around us is an infinitely valuable thing, having people who can help us celebrate our victories and learn from our losses.</p> */}
 						<p>We believe that when people gather, they make great stuff happen, whether creating a business, a charity or just helping each other grow.</p>
 						<p>So our mission is to help you meet awsome people and expand your social circle.</p>
 					</div>

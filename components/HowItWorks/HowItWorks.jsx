@@ -20,7 +20,7 @@ function HowItWorks() {
 					img="/imgs/steps/step2.svg"
 					number="Step 2:"
 					title="Create or join an event"
-					desc="You can join an existing event or you can take the lead and create one, it's also a chance to discover new interests and to make new friends."
+					desc="You can join an existing event or you can create one, it's also a chance to discover new interests and to make new friends."
 					/>
 				<StepCard
 					img="/imgs/steps/step3.svg"

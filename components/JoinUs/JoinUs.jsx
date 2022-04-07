@@ -68,7 +68,7 @@ function JoinUs() {
 										required
 										type="email"
 										name='email' />
-									<span>Ideally school email</span>
+									{/* <span>Ideally school email</span> */}
 								</div>
 							</div>
 							<div className='col-12'>
@@ -84,11 +84,11 @@ function JoinUs() {
 											})}
 										</ul>
 									}
-									<span>Bringo will lunch at um6p bg first, if you want it in your local university/community let us know.</span>
+									{/* <span>Bringo will lunch at um6p bg first, if you want it in your local university/community let us know.</span> */}
 								</div>
 							</div>
 
-							<div className='col-12'>
+							{/* <div className='col-12'>
 								<div className={`${styles["input-group"]} ${styles["textarea"]}`}>
 									<label htmlFor="email">Feedback <span className={styles.greyText}>(optional)</span></label>
 									<textarea
@@ -98,7 +98,7 @@ function JoinUs() {
 										rows={4} />
 									<span>We&apos;d like to know what you think</span>
 								</div>
-							</div>
+							</div> */}
 							<div className={`col-12 ${styles.btnContainer}`}>
 								<button className='main-btn'>Submit</button>
 								<span>We are still building Bringo at the moment, your email will only be used to contact you once we launch</span>

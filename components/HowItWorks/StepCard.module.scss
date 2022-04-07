@@ -3,14 +3,17 @@
 .stepContainer {
 	align-items: center;
 	padding-bottom: 130px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 .step {
 	h3 {
 		font-weight: 500;
+		color: $mainColor;
 	}
 	h5 {
-		font-weight: 500;
+		font-weight: 600;
 	}
 	h3,
 	h5 {
