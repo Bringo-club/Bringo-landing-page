@@ -76,6 +76,7 @@
 
 .locationGroup {
 	position: relative;
+	padding-top: 1rem;
 }
 
 .suggestList {
@@ -97,6 +98,10 @@
 }
 
 @media (max-width: 1024px) {
+
+	.locationGroup {
+		padding-top: 0rem;
+	}
 	.textarea textarea,
 	.input-group input {
 		background: #FFFCFC;
