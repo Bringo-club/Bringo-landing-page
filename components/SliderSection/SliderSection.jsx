@@ -74,13 +74,13 @@ function SliderSection() {
 								<p className="sm-show">Create or Join an event. Connect, <br />
 									Learn, Grow, Have fun & make <br /> Good memories together.</p>
 
-								<Link href="#join-us" passHref>
+									<a href="https://app.bringo.club/" target="_blank" rel="noreferrer">
 									<div className={styles.btnContainer}>
 										<button className='main-btn bringo-btn'>
 										Join Bringo <LeftArrow />
 										</button>
 									</div>
-								</Link>
+								</a>
 							</div>
 						</div>
 					</div>

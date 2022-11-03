@@ -19,7 +19,7 @@ function LandingPage() {
 			<SliderSection />
 			<HowItWorks />
 			<About />
-			<JoinUs />
+			{/* <JoinUs /> */}
 			<Footer />
 		</>
 	);
